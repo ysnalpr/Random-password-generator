@@ -10,9 +10,7 @@ Follow the steps below
 2. Clone the project `https://github.com/ysnalpr/Random-password-generator.git`
 3. Make development environment ready using commands below.
 
-``` 
-On mac and linux
-
+``` On mac and linux
 git clone https://github.com/ysnalpr/Random-password-generator.git
 cd Random-password-generator
 python -m virtualenv env  # Create a virtualenv named env.
@@ -20,9 +18,7 @@ source env/bin/activate   # Activate the virtual environment.
 pip install -r requirements.txt
 ```
 
-``` 
-On windows
-
+``` On windows
 git clone https://github.com/ysnalpr/Random-password-generator.git
 cd Random-password-generator
 virtualenv env  # Create a virtualenv name env.
