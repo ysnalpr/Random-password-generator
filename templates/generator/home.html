@@ -1,0 +1,49 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="text">Random Password Generator</div>
+    <div class="input-data">
+      <div class="display">
+        <input value="{{ password }}" class="password" id="myInput">
+        <div class="tooltip">
+          <button onclick="myFunction()" onmouseout="outFunc()" class="copyBtn">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy
+          </button>
+        </div>
+      </div>
+      <form>
+        <select class="form-control" name="length">
+          <option value="" disabled selected hidden>Length</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <!-- checkbox -->
+          <ul class="ks-cboxtags">
+            <li><input type="checkbox" id="checkboxFour" name="uppercase"><label for="checkboxFour">Uppercase</label></li>
+            <li><input type="checkbox" id="checkboxOne" name="numbers"><label for="checkboxOne">Numbers</label></li>
+            <li><input type="checkbox" id="checkboxTwo" name="symbols"><label for="checkboxTwo">Symbols</label></li>
+          </ul>
+        <!-- /checkbox -->
+        <button type="submit" value="Generate Password" class="genbtn">Generate Password</button>
+      </form>
+    </div>
+    </div>
+</div>
+{% endblock %}
